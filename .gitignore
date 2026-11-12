@@ -1,0 +1,18 @@
+# Build outputs - run build.cmd
+*.exe
+*.pdb
+
+# Machine-specific state and secrets - never commit
+agent.config
+agent.config.bak
+profiles/
+*.log
+*.tmp
+*.zip
+ios-app/DisplayDeck/Secrets.swift
+
+# Xcode / macOS
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.DS_Store

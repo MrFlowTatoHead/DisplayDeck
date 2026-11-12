@@ -1,0 +1,31 @@
+# DisplaySwitch configuration, shared by the PC agent (SwitchAgent.exe), the desktop
+# shortcuts, and the capture tool. Copy this file to agent.config (git-ignored).
+# The token must match the DisplayDeck iPhone app (ios-app/DisplayDeck/Secrets.swift).
+# Mode changes are picked up live; port/token changes need an agent restart.
+port=5990
+token=change-me-to-a-long-random-string
+
+# Display modes, one block per slot (Capture-Display-Mode.cmd fills these in).
+#   profile = saved layout in profiles\<profile>.mon
+#   audio   = part of an audio output name to select after switching (blank = leave audio alone)
+#   icon    = SF Symbol name shown on the iPhone
+mode.ultrawide.slot=1
+mode.ultrawide.label=Ultrawide
+mode.ultrawide.subtitle=
+mode.ultrawide.icon=display
+mode.ultrawide.profile=ultrawide
+mode.ultrawide.audio=
+
+mode.4k.slot=2
+mode.4k.label=4K Theater
+mode.4k.subtitle=
+mode.4k.icon=tv
+mode.4k.profile=4k
+mode.4k.audio=
+
+mode.slot3.slot=3
+mode.slot3.label=Slot 3
+mode.slot3.subtitle=
+mode.slot3.icon=display.2
+mode.slot3.profile=slot3
+mode.slot3.audio=
